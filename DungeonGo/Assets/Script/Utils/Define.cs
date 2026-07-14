@@ -3,6 +3,12 @@ using UnityEngine;
 public class Define 
 {
 
+    public enum EUnitType
+    {
+        Character,
+        Monster
+    }
+
     public enum EState
     {
         Idle,
@@ -25,5 +31,17 @@ public class Define
         public const string DIE_START = "7_die_start";
         public const string PORTAL_END = "8_portal_end";
         public const string PORTAL_START = "8_portal_start";
+    }
+
+    public static class ObjectAnimationName
+    {
+        public const string IDLE = "idle";
+        public const string MOVE = "move";
+        public const string ATTACK = "attack";
+        public const string ACTIVE_SKILL = "skill";
+        public const string Special_SKILL = "spSkill";
+        public const string DIE = "die";
+        public const string CLEAR = "clear";
+        public const string HIT = "hit";
     }
 }
